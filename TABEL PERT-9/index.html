@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Nilai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Aplikasi Nilai</h1>
+        <div class="form-group">
+            <label for="nim">NIM</label>
+            <input type="text" id="nim">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama">
+            <hr>
+        </div>
+        <div class="nilai-group">
+            <div class="nilai-box teori">
+                <h2>Nilai Teori</h2>
+                <hr>
+                <label for="presensi-teori">Presensi</label>
+                <input type="number" id="presensi-teori">
+                <label for="tugas-teori">Tugas</label>
+                <input type="number" id="tugas-teori">
+                <label for="uts-teori">UTS</label>
+                <input type="number" id="uts-teori">
+                <label for="uas-teori">UAS</label>
+                <input type="number" id="uas-teori">
+            </div>
+            <div class="nilai-box praktik">
+                <h2>Nilai Praktik</h2>
+                <hr>
+                <label for="presensi-praktik">Presensi</label>
+                <input type="number" id="presensi-praktik">
+                <label for="tugas-praktik">Tugas</label>
+                <input type="number" id="tugas-praktik">
+                <label for="uts-praktik">UTS</label>
+                <input type="number" id="uts-praktik">
+                <label for="uas-praktik">UAS</label>
+                <input type="number" id="uas-praktik">
+            </div>
+        </div>
+        <button class="simpan" onclick="simpan()">Simpan</button>
+        <button class="reset" onclick="reset()">Reset</button>
+        <table id="tabel-nilai">
+            <hr>
+            <thead>
+                <h2> Rincian Nilai</h2>
+                <tr>
+                    <th>No</th>
+                    <th>NIM</th>
+                    <th>Nama</th>
+                    <th>Presensi</th>
+                    <th>Tugas</th>
+                    <th>UTS</th>
+                    <th>UAS</th>
+                    <th>Nilai Akhir</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button class="reset" onclick="reset()">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
